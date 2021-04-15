@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Card, Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const buttonVariants = {
     hover: {
@@ -8,7 +9,7 @@ const buttonVariants = {
     }
 }
 
-const ProjectItem = ({ title, subtitle, desc }) => {
+const ProjectItem = ({ title, subtitle, desc, link }) => {
     return (
         <Col xs={12} sm={12} md={6} lg={4} xl={3}>
             <div className="project-card-wrapper">
@@ -24,12 +25,14 @@ const ProjectItem = ({ title, subtitle, desc }) => {
                         {desc}
                     </Card.Text>
                 </Card>
-                <motion.button className="project-card-button"
-                    variants={buttonVariants}
-                    whileHover="hover"
-                >
-                    Github
+                <Link to={{ pathname: link }} target="_blank" >
+                    <motion.button className="project-card-button"
+                        variants={buttonVariants}
+                        whileHover="hover"
+                    >
+                        Github
                 </motion.button>
+                </Link>
             </div>
         </Col>
     );
