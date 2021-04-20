@@ -5,8 +5,6 @@ import { useState } from 'react';
 import { pageVariants } from '../MotionVariants';
 import viaesys from '../../images/Viaesys.jpg';
 import wlu from '../../images/WLU.jpg';
-import sobeys from '../../images/Sobeys.jpg';
-import uw from '../../images/UW.svg';
 import phi from '../../images/PhiSoc.jpg';
 import SkillItem from '../SkillItem';
 
