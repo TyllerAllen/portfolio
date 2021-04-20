@@ -70,7 +70,7 @@ const Resume = () => {
                         </Collapse>
                     </Card>
                     <Card text="white" className="resume-card">
-                        <Card.Header className="resume-card-header" onClick={() => toggleOpen(EXPERIENCE)}>Experience</Card.Header>
+                        <Card.Header className="resume-card-header" onClick={() => toggleOpen(EXPERIENCE)}>Latest Experience</Card.Header>
                         <Collapse in={openTabs[EXPERIENCE]}>
                             <div>
                                 <ResumeItem
@@ -80,22 +80,6 @@ const Resume = () => {
                                     title="Viaesys Inc."
                                     subtitle="Quality Assurance Tester"
                                     desc="Assembled and tested more than 200 camera and GPS systems to be used by road patrol companies."
-                                />
-                                <ResumeItem
-                                    startYear="2016"
-                                    endYear="2017"
-                                    img={sobeys}
-                                    title="Sobeys Inc."
-                                    subtitle="Cashier / Bagger"
-                                    desc=""
-                                />
-                                <ResumeItem
-                                    startYear="2013"
-                                    endYear=""
-                                    img={uw}
-                                    title="Co-op"
-                                    subtitle="Research Assistant"
-                                    desc="Assisted Dr. David Wang at the University of Waterloo in his research and development in the field of haptic technoloty."
                                 />
                             </div>
                         </Collapse>
